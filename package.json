@@ -1,6 +1,6 @@
 {
   "name": "@sebastienperrot/task-achiever-ds",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "Task Achiever DS",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
