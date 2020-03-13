@@ -1,8 +1,8 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, Watch } from '@stencil/core';
 
 @Component({
     tag: 'ta-button',
-    styleUrl: 'button.css',
+    styleUrl: 'button.scss',
     shadow: true
 })
 export class TAButton {
@@ -12,7 +12,13 @@ export class TAButton {
      * If not set, the default value will be set to 'square'
      */
 
-    @Prop() shape: string = 'square';
+    @Prop() shape : string = 'square';
+    
+    @Watch('shape') 
+    validateShape(value : string) {
+        if(!value || typeof value !== 'string') this.shape = 'square';
+        else this.shape = value;
+    };
     /**
     * Set the type of button.
     * Can be set to primarydasheddanger or omitted (meaning default)
