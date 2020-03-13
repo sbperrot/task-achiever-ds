@@ -1,4 +1,4 @@
-import { Component, h, Host, Element } from '@stencil/core';
+import { Component, h, Element } from '@stencil/core';
 
 @Component({
     tag: 'ta-input',
