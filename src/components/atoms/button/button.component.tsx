@@ -21,15 +21,20 @@ export class TAButton {
     };
     /**
     * Set the type of button.
-    * Can be set to primarydasheddanger or omitted (meaning default)
+    * Can be set to primary dashedd anger or omitted (meaning default)
     * If not set, the default value will be set to 'default'
+    */
+    @Prop() taType: string = 'default';
+
+    /**
+    * Set the type (HTML sens) of button.
     */
     @Prop() type: string = 'default';
 
 
     render() {
         return (
-            <button class={`${ this.type } ${ this.shape }`}>
+            <button class={`${ this.taType } ${ this.shape }`} type={ this.type }>
                 <slot></slot>
             </button>
         )

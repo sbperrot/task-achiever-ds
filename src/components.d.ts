@@ -12,7 +12,11 @@ export namespace Components {
          */
         "shape": string;
         /**
-          * Set the type of button. Can be set to primarydasheddanger or omitted (meaning default) If not set, the default value will be set to 'default'
+          * Set the type of button. Can be set to primary dashedd anger or omitted (meaning default) If not set, the default value will be set to 'default'
+         */
+        "taType": string;
+        /**
+          * Set the type (HTML sens) of button.
          */
         "type": string;
     }
@@ -44,7 +48,11 @@ declare namespace LocalJSX {
          */
         "shape"?: string;
         /**
-          * Set the type of button. Can be set to primarydasheddanger or omitted (meaning default) If not set, the default value will be set to 'default'
+          * Set the type of button. Can be set to primary dashedd anger or omitted (meaning default) If not set, the default value will be set to 'default'
+         */
+        "taType"?: string;
+        /**
+          * Set the type (HTML sens) of button.
          */
         "type"?: string;
     }
